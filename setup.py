@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as f:
 with open("README.rst") as f:
     readme = f.read()
 
-github_url = "https://github.com/Nux-xader/apx"
+github_url = "https://github.com/Nux-xader/Flask-Apx"
 
 
 setup(
