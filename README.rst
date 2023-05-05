@@ -2,7 +2,7 @@
 Apx
 ===
 
-.. image:: https://github.com/Nux-xader/apx/blob/master/images/sample.png)
+.. image:: https://github.com/Nux-xader/apx/blob/master/images/sample.png
     :target: https://github.com/Nux-xader/apx/blob/master/example/app.py
     :alt: Apx example
 
