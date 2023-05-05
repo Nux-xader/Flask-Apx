@@ -3,7 +3,6 @@ env/
 
 # Distribution / packaging
 dist/
-build/
 *.egg-info/
 
 
