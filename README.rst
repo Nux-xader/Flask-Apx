@@ -22,7 +22,7 @@ Installation and usage
 ======================
 **installation**
 
-``$ pip install Flask-Apx``
+``$ pip install FlaskApx``
 
 or
 

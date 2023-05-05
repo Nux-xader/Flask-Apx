@@ -11,7 +11,7 @@ github_url = "https://github.com/Nux-xader/apx"
 
 
 setup(
-    name="Flask-Apx", 
+    name="FlaskApx", 
     url=github_url, 
     project_urls={
         "Github": github_url
