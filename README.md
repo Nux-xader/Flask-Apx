@@ -12,7 +12,7 @@ This project is still in **BETA**. Please be careful if you want to use it in pr
 Why use apx?
 ---
  - readable your code
- - simplyfy your code
+ - simplyify your code
  - speed up the development process
 
 Installation and usage
