@@ -1,1 +1,2 @@
 flask
+PyJWT==2.7.0
