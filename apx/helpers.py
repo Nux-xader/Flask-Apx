@@ -8,12 +8,15 @@ class ApxResp:
     def __init__(self) -> None:
         self.spesific_err_msgs = tuple()
 
-    def success(self, data):
-        return {
-            "err": False, 
-            "msg": "success", 
-            "data": data
-        }
+    def success(self, resp_data):
+        if isinstance(resp_data, (type(None), str, bool, float, int, list, dict)):
+            return {
+                "err": False, 
+                "msg": "success", 
+                "data": resp_data
+            }
+        
+        return resp_data
 
     def bad_req(self, e):
         return {

@@ -18,7 +18,7 @@ setup(
     },
     author="Nux xader A.K.A Satria Rahmat", 
     python_requires=">=3.7, <4", 
-    version="1.0.0", 
+    version="1.0.2", 
     keywords=["flask helper", "flask", "API heler", "API Toolkit", "API warper"], 
     description="The helper for Flask", 
     long_description=readme, 

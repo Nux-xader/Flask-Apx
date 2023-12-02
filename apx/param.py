@@ -1,3 +1,4 @@
+import os
 import typing as t
 from flask import request
 from apx.helpers import try_it
@@ -68,3 +69,33 @@ class Param:
 
         return data
 
+    def files(
+        self, 
+        name:str, 
+        is_require:bool=False, 
+        min_size:t.Optional[float]=None, 
+        max_size:t.Optional[float]=None, 
+        allowed_extensions:t.Optional[t.Union[tuple, list]]=None
+    ) -> str:
+        file_list = request.files.getlist(name)
+
+        if is_require and len(file_list) == 0:
+            self.missing_param(name=name)
+
+        if allowed_extensions is not None:
+            forbidden_ext = filter(map(
+                lambda x: os.path.splitext(x.filename)[-1] not in allowed_extensions, 
+                file_list
+            ))
+            if any(forbidden_ext):
+                raise BadReq(f"param {name} can be contain {allowed_extensions} extensions")
+            
+        if min_size is not None:
+            # cooming soon
+            pass
+
+        if max_size is not None:
+            # cooming soon
+            pass
+
+        return file_list
